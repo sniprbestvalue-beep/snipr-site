@@ -1,0 +1,31 @@
+{
+  "version": "2.1",
+  "generated_utc": "2026-11-18T02:38:37.613302+00:00",
+  "site_url": null,
+  "max_age_hours": 168,
+  "categories": [
+    "Dining",
+    "Electronics",
+    "Entertainment",
+    "Family",
+    "Fashion",
+    "Financial Offers",
+    "Groceries",
+    "Home & Kitchen",
+    "Household",
+    "Other",
+    "Personal Care",
+    "Smart Home",
+    "Software & Apps",
+    "Tools & Automotive",
+    "Travel"
+  ],
+  "database_records": 87,
+  "published": 87,
+  "excluded_status": 0,
+  "excluded_stale": 0,
+  "excluded_missing_title": 0,
+  "missing_timestamp": 0,
+  "missing_destination": 0,
+  "affiliate_links": 0
+}
