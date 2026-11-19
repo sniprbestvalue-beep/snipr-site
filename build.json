@@ -1,6 +1,6 @@
 {
   "version": "2.1",
-  "generated_utc": "2026-11-18T07:02:55.646311+00:00",
+  "generated_utc": "2026-11-19T07:10:42.268226+00:00",
   "site_url": null,
   "max_age_hours": 168,
   "categories": [
@@ -20,8 +20,8 @@
     "Tools & Automotive",
     "Travel"
   ],
-  "database_records": 117,
-  "published": 117,
+  "database_records": 160,
+  "published": 160,
   "excluded_status": 0,
   "excluded_stale": 0,
   "excluded_missing_title": 0,
