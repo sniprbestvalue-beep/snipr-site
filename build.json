@@ -1,7 +1,7 @@
 {
-  "version": "2.1",
-  "generated_utc": "2026-11-19T07:10:42.268226+00:00",
-  "site_url": null,
+  "version": "2.7",
+  "generated_utc": "2026-11-19T11:41:27.573316+00:00",
+  "site_url": "https://getsnipr.au",
   "max_age_hours": 168,
   "categories": [
     "Dining",
@@ -21,11 +21,19 @@
     "Travel"
   ],
   "database_records": 160,
-  "published": 160,
+  "published": 159,
   "excluded_status": 0,
   "excluded_stale": 0,
   "excluded_missing_title": 0,
   "missing_timestamp": 0,
   "missing_destination": 0,
-  "affiliate_links": 0
+  "affiliate_links": 0,
+  "quality_exclusions": {
+    "old_publication": 1
+  },
+  "excluded_total": 1,
+  "indexing_enabled": false,
+  "analytics_enabled": false,
+  "social_drafts": 10,
+  "merchant_count": 71
 }

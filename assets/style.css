@@ -50,3 +50,9 @@ border-top:1px solid var(--line);color:var(--muted);font-size:13px}
 @media(max-width:550px){header{flex-direction:column;gap:15px}
 .grid{grid-template-columns:1fr}.hero{padding:40px 22px}
 main{padding:20px 4%}.detail{padding:22px}}
+
+.growth-nav{display:flex;gap:12px;flex-wrap:wrap;margin:20px 0}
+.growth-nav a{color:var(--lime)}
+.deal-note{font-size:13px;color:var(--muted);line-height:1.5}
+.share-link{display:inline-block;margin:12px 0;color:var(--lime)}
+.affiliate-label{color:var(--lime);font-size:13px;font-weight:700}
