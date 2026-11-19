@@ -1,6 +1,6 @@
 {
   "version": "2.7",
-  "generated_utc": "2026-11-19T12:06:34.222713+00:00",
+  "generated_utc": "2026-11-19T19:01:42.073436+00:00",
   "site_url": "https://getsnipr.au",
   "max_age_hours": 168,
   "categories": [
@@ -20,8 +20,8 @@
     "Tools & Automotive",
     "Travel"
   ],
-  "database_records": 160,
-  "published": 159,
+  "database_records": 192,
+  "published": 191,
   "excluded_status": 0,
   "excluded_stale": 0,
   "excluded_missing_title": 0,
@@ -35,5 +35,5 @@
   "indexing_enabled": true,
   "analytics_enabled": false,
   "social_drafts": 10,
-  "merchant_count": 71
+  "merchant_count": 86
 }
