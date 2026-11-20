@@ -1,6 +1,6 @@
 {
   "version": "2.7",
-  "generated_utc": "2026-11-20T08:23:03.894413+00:00",
+  "generated_utc": "2026-11-20T08:57:17.657153+00:00",
   "site_url": "https://getsnipr.au",
   "max_age_hours": 168,
   "categories": [
@@ -32,10 +32,31 @@
     "old_publication": 1
   },
   "excluded_total": 1,
-  "growth_version": null,
-  "growth_metrics": {},
+  "growth_version": "3.0B.2",
+  "growth_metrics": {
+    "growth_version": "3.0B.2",
+    "generated_utc": "2026-11-20T08:57:17.808546+00:00",
+    "published_deals": 262,
+    "original_buying_guides": 8,
+    "merchant_pages": 8,
+    "comparison_pages": 1,
+    "category_illustrations_enabled": true,
+    "deals_with_approved_image_candidates": 0,
+    "approved_image_candidate_coverage_pct": 0.0,
+    "recognised_retailer_destinations": 0,
+    "published_prices_suppressed": 118,
+    "input_statistics": {
+      "suppressed_prices": 119,
+      "community_listing": 263,
+      "delivery_costs_detected": 11,
+      "normalised_merchants": 18,
+      "input_rows": 263
+    },
+    "live_prices_verified": 0,
+    "traffic_verified": false
+  },
   "indexing_enabled": true,
   "analytics_enabled": false,
   "social_drafts": 10,
-  "merchant_count": 120
+  "merchant_count": 119
 }
