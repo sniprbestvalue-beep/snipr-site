@@ -1,6 +1,6 @@
 {
   "version": "2.7",
-  "generated_utc": "2026-11-20T19:03:42.238353+00:00",
+  "generated_utc": "2026-11-20T22:30:46.788303+00:00",
   "site_url": "https://getsnipr.au",
   "max_age_hours": 168,
   "categories": [
@@ -35,7 +35,7 @@
   "growth_version": "3.0B.2",
   "growth_metrics": {
     "growth_version": "3.0B.2",
-    "generated_utc": "2026-11-20T19:03:42.375252+00:00",
+    "generated_utc": "2026-11-20T22:30:46.915203+00:00",
     "published_deals": 295,
     "original_buying_guides": 8,
     "merchant_pages": 9,
@@ -56,7 +56,7 @@
     "traffic_verified": false
   },
   "indexing_enabled": true,
-  "analytics_enabled": false,
+  "analytics_enabled": true,
   "social_drafts": 10,
   "merchant_count": 129
 }

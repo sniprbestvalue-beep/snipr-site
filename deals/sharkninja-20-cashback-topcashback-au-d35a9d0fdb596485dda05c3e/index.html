@@ -21,6 +21,206 @@
 <meta name="twitter:description" content="SharkNinja: 20% Cashback @ TopCashback AU. Discover this recorded Australian offer on SNIPR. Check current retailer terms.">
 <link rel="alternate" type="application/rss+xml" title="SNIPR Deals" href="/feed.xml">
 <meta name="robots" content="index,follow">
+
+<!-- SNIPR V3.0E.1B CONSENT-FIRST GA4 -->
+<script>
+(function() {
+    "use strict";
+
+    const measurementId = "G-1CETK53VZ3";
+    const key = "snipr_analytics_consent_v1";
+
+    function choice() {
+        try {
+            return localStorage.getItem(key);
+        } catch (_) {
+            return null;
+        }
+    }
+
+    function remember(value) {
+        try {
+            localStorage.setItem(key, value);
+        } catch (_) {
+            // Storage is optional.
+        }
+    }
+
+    function clearAnalyticsCookies() {
+        const names = document.cookie.split(";").map(
+            item => item.trim().split("=")[0]
+        );
+
+        const domains = [
+            "",
+            location.hostname,
+            "." + location.hostname,
+            ".getsnipr.au"
+        ];
+
+        for (const name of names) {
+            if (!/^(_ga|_gid|_gat)(_|$)/.test(name)) {
+                continue;
+            }
+
+            for (const domain of domains) {
+                const domainPart = domain
+                    ? "; domain=" + domain
+                    : "";
+
+                document.cookie =
+                    name + "=; Max-Age=0; path=/"
+                    + domainPart
+                    + "; SameSite=Lax";
+            }
+        }
+    }
+
+    function loadAnalytics() {
+        if (choice() !== "accepted") return;
+        if (window.sniprAnalyticsLoaded) return;
+
+        window.sniprAnalyticsLoaded = true;
+        window.dataLayer = window.dataLayer || [];
+
+        window.gtag = function() {
+            window.dataLayer.push(arguments);
+        };
+
+        window.gtag("js", new Date());
+        window.gtag("config", measurementId);
+
+        const script = document.createElement("script");
+        script.async = true;
+        script.src =
+            "https://www.googletagmanager.com/gtag/js?id="
+            + encodeURIComponent(measurementId);
+
+        document.head.appendChild(script);
+    }
+
+    function setChoice(value) {
+        const wasAccepted = choice() === "accepted";
+        remember(value);
+
+        if (value === "rejected") {
+            if (typeof window.gtag === "function") {
+                window.gtag("consent", "update", {
+                    analytics_storage: "denied"
+                });
+            }
+
+            window.gtag = function() {};
+            window.sniprAnalyticsLoaded = false;
+
+            clearAnalyticsCookies();
+
+            if (wasAccepted) {
+                location.reload();
+                return;
+            }
+        }
+
+        if (value === "accepted") {
+            loadAnalytics();
+        }
+
+        document.getElementById(
+            "snipr-consent-panel"
+        )?.remove();
+    }
+
+    function showPanel() {
+        document.getElementById(
+            "snipr-consent-panel"
+        )?.remove();
+
+        const panel = document.createElement("section");
+        panel.id = "snipr-consent-panel";
+        panel.setAttribute(
+            "aria-label", "Analytics preferences"
+        );
+
+        panel.style.cssText =
+            "position:fixed;bottom:55px;left:12px;"
+            + "right:12px;max-width:520px;z-index:99999;"
+            + "background:#18231c;color:#fff;"
+            + "padding:18px;border:1px solid #baff45;"
+            + "border-radius:12px;"
+            + "box-shadow:0 4px 24px #0008;"
+            + "font:14px/1.5 system-ui,sans-serif";
+
+        const message = document.createElement("p");
+        message.textContent =
+            "Optional Google Analytics helps SNIPR "
+            + "measure website visits and outbound "
+            + "shopping-link interactions. "
+            + "Choose whether to allow analytics.";
+        message.style.margin = "0 0 12px";
+
+        function button(label, value) {
+            const element = document.createElement("button");
+            element.type = "button";
+            element.textContent = label;
+            element.style.cssText =
+                "padding:10px 14px;margin:4px 8px 0 0;"
+                + "border:1px solid #baff45;"
+                + "border-radius:7px;cursor:pointer;"
+                + "background:#253329;color:#fff";
+
+            element.addEventListener(
+                "click", () => setChoice(value)
+            );
+            return element;
+        }
+
+        panel.append(
+            message,
+            button("Accept analytics", "accepted"),
+            button("Reject analytics", "rejected")
+        );
+
+        document.body.appendChild(panel);
+    }
+
+    function initialise() {
+        const settings = document.createElement("button");
+        settings.type = "button";
+        settings.textContent = "Privacy settings";
+        settings.setAttribute(
+            "aria-label", "Change analytics preferences"
+        );
+
+        settings.style.cssText =
+            "position:fixed;bottom:8px;left:12px;"
+            + "z-index:99998;padding:8px 12px;"
+            + "border:1px solid #baff45;"
+            + "border-radius:8px;background:#18231c;"
+            + "color:#fff;cursor:pointer;"
+            + "font:12px system-ui,sans-serif";
+
+        settings.addEventListener("click", showPanel);
+        document.body.appendChild(settings);
+
+        const current = choice();
+
+        if (current === "accepted") {
+            loadAnalytics();
+        } else if (current !== "rejected") {
+            showPanel();
+        }
+    }
+
+    if (document.readyState === "loading") {
+        document.addEventListener(
+            "DOMContentLoaded", initialise
+        );
+    } else {
+        initialise();
+    }
+})();
+</script>
+
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "SharkNinja: 20% Cashback @ TopCashback AU", "url": "https://getsnipr.au/deals/sharkninja-20-cashback-topcashback-au-d35a9d0fdb596485dda05c3e/", "description": "SharkNinja: 20% Cashback @ TopCashback AU. Discover this recorded Australian offer on SNIPR. Check current retailer terms.", "inLanguage": "en-AU", "isPartOf": {"@type": "WebSite", "name": "SNIPR", "url": "https://getsnipr.au"}}</script>
 </head>
 <body>
