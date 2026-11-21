@@ -1,6 +1,6 @@
 {
   "version": "2.7",
-  "generated_utc": "2026-11-21T01:04:42.092458+00:00",
+  "generated_utc": "2026-11-21T04:52:04.390104+00:00",
   "site_url": "https://getsnipr.au",
   "max_age_hours": 168,
   "categories": [
@@ -32,10 +32,18 @@
     "old_publication": 1
   },
   "excluded_total": 1,
+  "collectibles": {
+    "enabled": true,
+    "version": "3.1B",
+    "products": 8,
+    "pages": 9,
+    "public_price_display_approved": false,
+    "public_image_display_approved": false
+  },
   "growth_version": "3.0B.2",
   "growth_metrics": {
     "growth_version": "3.0B.2",
-    "generated_utc": "2026-11-21T01:04:42.234164+00:00",
+    "generated_utc": "2026-11-21T04:52:04.507161+00:00",
     "published_deals": 324,
     "original_buying_guides": 8,
     "merchant_pages": 12,
