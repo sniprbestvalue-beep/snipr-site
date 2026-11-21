@@ -1,6 +1,6 @@
 {
   "version": "2.7",
-  "generated_utc": "2026-11-21T04:52:04.390104+00:00",
+  "generated_utc": "2026-11-21T05:00:16.367579+00:00",
   "site_url": "https://getsnipr.au",
   "max_age_hours": 168,
   "categories": [
@@ -20,8 +20,8 @@
     "Tools & Automotive",
     "Travel"
   ],
-  "database_records": 325,
-  "published": 324,
+  "database_records": 349,
+  "published": 347,
   "excluded_status": 0,
   "excluded_stale": 0,
   "excluded_missing_title": 0,
@@ -29,9 +29,9 @@
   "missing_destination": 0,
   "affiliate_links": 0,
   "quality_exclusions": {
-    "old_publication": 1
+    "old_publication": 2
   },
-  "excluded_total": 1,
+  "excluded_total": 2,
   "collectibles": {
     "enabled": true,
     "version": "3.1B",
@@ -43,8 +43,8 @@
   "growth_version": "3.0B.2",
   "growth_metrics": {
     "growth_version": "3.0B.2",
-    "generated_utc": "2026-11-21T04:52:04.507161+00:00",
-    "published_deals": 324,
+    "generated_utc": "2026-11-21T05:00:16.492768+00:00",
+    "published_deals": 347,
     "original_buying_guides": 8,
     "merchant_pages": 12,
     "comparison_pages": 1,
@@ -52,13 +52,13 @@
     "deals_with_approved_image_candidates": 0,
     "approved_image_candidate_coverage_pct": 0.0,
     "recognised_retailer_destinations": 0,
-    "published_prices_suppressed": 145,
+    "published_prices_suppressed": 152,
     "input_statistics": {
-      "suppressed_prices": 146,
-      "community_listing": 325,
-      "delivery_costs_detected": 12,
-      "normalised_merchants": 24,
-      "input_rows": 325
+      "suppressed_prices": 154,
+      "community_listing": 349,
+      "delivery_costs_detected": 15,
+      "normalised_merchants": 26,
+      "input_rows": 349
     },
     "live_prices_verified": 0,
     "traffic_verified": false
@@ -66,5 +66,5 @@
   "indexing_enabled": true,
   "analytics_enabled": true,
   "social_drafts": 10,
-  "merchant_count": 136
+  "merchant_count": 145
 }
